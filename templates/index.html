@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatGPT-Integration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to ChatGPT-Integration</h1>
+    <form method="POST">
+        <input id="in1" placeholder="enter prompts here" name="text">
+        <input id="sub1" type="submit" value="Submit">
+    </form>
+
+    <textarea rows="20" cols="47" placeholder="Output will be shown here..." readonly>{{ processed_text }}</textarea>
+
+    <form method="get" action="/prompts">
+        <input id="sub2" type="submit" value="All Prompts" name="action"/>
+    </form>
+</body>
+</html>

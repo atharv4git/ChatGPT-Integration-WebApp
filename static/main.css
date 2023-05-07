@@ -1,0 +1,43 @@
+body{
+margin:0;
+padding:0;
+color: #fff;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,18,31,1) 100%);
+font-family: 'Poppins', sans-serif;
+text-align: center;
+}
+
+form{
+margin-top: 150px;
+}
+
+#in1{
+margin: 20px;
+padding: 10px 30px 10px 30px;
+}
+
+#sub1{
+margin: 20px;
+padding: 10px 20px 10px 20px;
+background: white;
+}
+
+textarea{
+color: #fff;
+border: none;
+overflow: auto;
+outline: none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+margin:10px;
+background: rgb(44,44,44);
+background: radial-gradient(circle, rgba(44,44,44,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#sub2{
+margin: 20px;
+padding: 10px 20px 10px 20px;
+background: white;
+}

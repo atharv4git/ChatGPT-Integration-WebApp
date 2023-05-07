@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prompts</title>
+    <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    td {
+      max-width: 50px;
+      overflow: auto;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Prompts</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Prompt</th>
+          <th>Response</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %}
+        <tr>
+          <td>{{ row[0] }}</td>
+          <td>{{ row[1] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <form action="/">
+        <input id="back" type="submit" value="Go Back To HomePage" name="action"/>
+    </form>
+  </body>
+</html>
